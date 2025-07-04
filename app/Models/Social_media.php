@@ -51,24 +51,4 @@ class Social_media extends Model
     {
         return $this->belongsTo(\App\Models\Sms::class, 'interaction_id');
     }
-
-    public function interaction(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(\App\Models\Call::class, 'interaction_id');
-    }
-
-    public function interaction(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(\App\Models\VoiceRecording::class, 'interaction_id');
-    }
-
-    public function interaction(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(\App\Models\Chat::class, 'interaction_id');
-    }
-
-    public function interaction(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(\App\Models\Whatsapp::class, 'interaction_id');
-    }
 }

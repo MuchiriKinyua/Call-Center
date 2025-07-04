@@ -19,7 +19,7 @@
 
         <div class="card">
 
-            {!! Form::open(['route' => 'complaintCategories.store']) !!}
+            {!! Form::open(['route' => 'complaint_categories.store']) !!}
 
             <div class="card-body">
 
@@ -31,7 +31,7 @@
 
             <div class="card-footer">
                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('complaintCategories.index') }}" class="btn btn-default"> Cancel </a>
+                <a href="{{ route('complaint_categories.index') }}" class="btn btn-default"> Cancel </a>
             </div>
 
             {!! Form::close() !!}

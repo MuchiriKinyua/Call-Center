@@ -19,7 +19,7 @@
 
         <div class="card">
 
-            {!! Form::open(['route' => 'qualityAssessments.store']) !!}
+            {!! Form::open(['route' => 'quality_assessments.store']) !!}
 
             <div class="card-body">
 
@@ -31,7 +31,7 @@
 
             <div class="card-footer">
                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('qualityAssessments.index') }}" class="btn btn-default"> Cancel </a>
+                <a href="{{ route('quality_assessments.index') }}" class="btn btn-default"> Cancel </a>
             </div>
 
             {!! Form::close() !!}

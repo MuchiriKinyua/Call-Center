@@ -19,7 +19,7 @@
 
         <div class="card">
 
-            {!! Form::open(['route' => 'customerFeedbacks.store']) !!}
+            {!! Form::open(['route' => 'customer_feedbacks.store']) !!}
 
             <div class="card-body">
 
@@ -31,7 +31,7 @@
 
             <div class="card-footer">
                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('customerFeedbacks.index') }}" class="btn btn-default"> Cancel </a>
+                <a href="{{ route('customer_feedbacks.index') }}" class="btn btn-default"> Cancel </a>
             </div>
 
             {!! Form::close() !!}

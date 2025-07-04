@@ -19,7 +19,7 @@
 
         <div class="card">
 
-            {!! Form::open(['route' => 'crmSettings.store']) !!}
+            {!! Form::open(['route' => 'crm_settings.store']) !!}
 
             <div class="card-body">
 
@@ -31,7 +31,7 @@
 
             <div class="card-footer">
                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('crmSettings.index') }}" class="btn btn-default"> Cancel </a>
+                <a href="{{ route('crm_settings.index') }}" class="btn btn-default"> Cancel </a>
             </div>
 
             {!! Form::close() !!}

@@ -40,29 +40,4 @@ class Sentiment_analysis extends Model
     {
         return $this->belongsTo(\App\Models\Chat::class, 'interaction_id');
     }
-
-    public function interaction(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(\App\Models\VoiceRecording::class, 'interaction_id');
-    }
-
-    public function interaction(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(\App\Models\Email::class, 'interaction_id');
-    }
-
-    public function interaction(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(\App\Models\Whatsapp::class, 'interaction_id');
-    }
-
-    public function interaction(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(\App\Models\Call::class, 'interaction_id');
-    }
-
-    public function interaction(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(\App\Models\Sms::class, 'interaction_id');
-    }
 }

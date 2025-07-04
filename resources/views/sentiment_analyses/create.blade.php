@@ -19,7 +19,7 @@
 
         <div class="card">
 
-            {!! Form::open(['route' => 'sentimentAnalyses.store']) !!}
+            {!! Form::open(['route' => 'sentiment_analyses.store']) !!}
 
             <div class="card-body">
 
@@ -31,7 +31,7 @@
 
             <div class="card-footer">
                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('sentimentAnalyses.index') }}" class="btn btn-default"> Cancel </a>
+                <a href="{{ route('sentiment_analyses.index') }}" class="btn btn-default"> Cancel </a>
             </div>
 
             {!! Form::close() !!}

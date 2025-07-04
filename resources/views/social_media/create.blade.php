@@ -19,7 +19,7 @@
 
         <div class="card">
 
-            {!! Form::open(['route' => 'socialMedia.store']) !!}
+            {!! Form::open(['route' => 'social_media.store']) !!}
 
             <div class="card-body">
 
@@ -31,7 +31,7 @@
 
             <div class="card-footer">
                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('socialMedia.index') }}" class="btn btn-default"> Cancel </a>
+                <a href="{{ route('social_media.index') }}" class="btn btn-default"> Cancel </a>
             </div>
 
             {!! Form::close() !!}

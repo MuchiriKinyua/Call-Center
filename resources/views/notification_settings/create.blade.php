@@ -19,7 +19,7 @@
 
         <div class="card">
 
-            {!! Form::open(['route' => 'notificationSettings.store']) !!}
+            {!! Form::open(['route' => 'notification_settings.store']) !!}
 
             <div class="card-body">
 
@@ -31,7 +31,7 @@
 
             <div class="card-footer">
                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('notificationSettings.index') }}" class="btn btn-default"> Cancel </a>
+                <a href="{{ route('notification_settings.index') }}" class="btn btn-default"> Cancel </a>
             </div>
 
             {!! Form::close() !!}

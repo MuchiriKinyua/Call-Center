@@ -19,7 +19,7 @@
 
         <div class="card">
 
-            {!! Form::open(['route' => 'ivrFlows.store']) !!}
+            {!! Form::open(['route' => 'ivr_flows.store']) !!}
 
             <div class="card-body">
 
@@ -31,7 +31,7 @@
 
             <div class="card-footer">
                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('ivrFlows.index') }}" class="btn btn-default"> Cancel </a>
+                <a href="{{ route('ivr_flows.index') }}" class="btn btn-default"> Cancel </a>
             </div>
 
             {!! Form::close() !!}
