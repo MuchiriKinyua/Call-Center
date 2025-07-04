@@ -1,0 +1,190 @@
+[
+    {
+        "name": "id",
+        "dbType": "integer,true",
+        "htmlType": "number",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "user_id",
+        "dbType": "integer,false",
+        "htmlType": "number",
+        "validations": "nullable|nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "department_id",
+        "dbType": "integer,false",
+        "htmlType": "number",
+        "validations": "nullable|nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "full_name",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "email",
+        "dbType": "string",
+        "htmlType": "email",
+        "validations": "nullable|string|max:255|nullable|string|max:255",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "phone",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "nullable|string|max:20|nullable|string|max:20",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "status",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "nullable|string|max:20|nullable|string|max:20",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "assigned_agents_count",
+        "dbType": "integer,false",
+        "htmlType": "number",
+        "validations": "nullable|nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "performance_rating",
+        "dbType": "integer,false",
+        "htmlType": "number",
+        "validations": "nullable|nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "login_time",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "nullable|string|max:20|nullable|string|max:20",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "logout_time",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "nullable|string|max:20|nullable|string|max:20",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "created_at",
+        "dbType": "datetime",
+        "htmlType": "date",
+        "validations": "required",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "datetime",
+        "htmlType": "date",
+        "validations": "required",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Department,department_id"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,User,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Agent,supervisor_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Case,supervisor_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Department,supervisor_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,PerformanceReport,supervisor_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,QualityAssessment,supervisor_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Ticket,supervisor_id"
+    }
+]
