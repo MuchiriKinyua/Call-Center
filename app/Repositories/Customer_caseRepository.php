@@ -2,10 +2,10 @@
 
 namespace App\Repositories;
 
-use App\Models\Case;
+use App\Models\Customer_case;
 use App\Repositories\BaseRepository;
 
-class CaseRepository extends BaseRepository
+class Customer_caseRepository extends BaseRepository
 {
     protected $fieldSearchable = [
         'customer_id',
@@ -32,6 +32,6 @@ class CaseRepository extends BaseRepository
 
     public function model(): string
     {
-        return Case::class;
+        return Customer_case::class;
     }
 }

@@ -1,6 +1,6 @@
 <div class="card-body p-0">
     <div class="table-responsive">
-        <table class="table" id="cases-table">
+        <table class="table" id="customer_cases-table">
             <thead>
             <tr>
                 <th>Customer Id</th>
@@ -22,31 +22,31 @@
             </tr>
             </thead>
             <tbody>
-            @foreach($cases as $case)
+            @foreach($customerCases as $customerCase)
                 <tr>
-                    <td>{{ $case->customer_id }}</td>
-                    <td>{{ $case->agent_id }}</td>
-                    <td>{{ $case->supervisor_id }}</td>
-                    <td>{{ $case->department_id }}</td>
-                    <td>{{ $case->case_number }}</td>
-                    <td>{{ $case->issue }}</td>
-                    <td>{{ $case->notes }}</td>
-                    <td>{{ $case->category }}</td>
-                    <td>{{ $case->status }}</td>
-                    <td>{{ $case->priority }}</td>
-                    <td>{{ $case->channel }}</td>
-                    <td>{{ $case->opened_at }}</td>
-                    <td>{{ $case->closed_at }}</td>
-                    <td>{{ $case->resolution_details }}</td>
-                    <td>{{ $case->satisfaction_score }}</td>
+                    <td>{{ $customerCase->customer_id }}</td>
+                    <td>{{ $customerCase->agent_id }}</td>
+                    <td>{{ $customerCase->supervisor_id }}</td>
+                    <td>{{ $customerCase->department_id }}</td>
+                    <td>{{ $customerCase->case_number }}</td>
+                    <td>{{ $customerCase->issue }}</td>
+                    <td>{{ $customerCase->notes }}</td>
+                    <td>{{ $customerCase->category }}</td>
+                    <td>{{ $customerCase->status }}</td>
+                    <td>{{ $customerCase->priority }}</td>
+                    <td>{{ $customerCase->channel }}</td>
+                    <td>{{ $customerCase->opened_at }}</td>
+                    <td>{{ $customerCase->closed_at }}</td>
+                    <td>{{ $customerCase->resolution_details }}</td>
+                    <td>{{ $customerCase->satisfaction_score }}</td>
                     <td  style="width: 120px">
-                        {!! Form::open(['route' => ['cases.destroy', $case->id], 'method' => 'delete']) !!}
+                        {!! Form::open(['route' => ['customerCases.destroy', $customerCase->id], 'method' => 'delete']) !!}
                         <div class='btn-group'>
-                            <a href="{{ route('cases.show', [$case->id]) }}"
+                            <a href="{{ route('customerCases.show', [$customerCase->id]) }}"
                                class='btn btn-default btn-xs'>
                                 <i class="far fa-eye"></i>
                             </a>
-                            <a href="{{ route('cases.edit', [$case->id]) }}"
+                            <a href="{{ route('customerCases.edit', [$customerCase->id]) }}"
                                class='btn btn-default btn-xs'>
                                 <i class="far fa-edit"></i>
                             </a>
@@ -62,7 +62,7 @@
 
     <div class="card-footer clearfix">
         <div class="float-right">
-            @include('adminlte-templates::common.paginate', ['records' => $cases])
+            @include('adminlte-templates::common.paginate', ['records' => $customerCases])
         </div>
     </div>
 </div>

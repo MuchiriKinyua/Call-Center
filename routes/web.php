@@ -53,3 +53,4 @@ Route::resource('ticket_statutes', App\Http\Controllers\Ticket_statuteController
 Route::resource('voice_recordings', App\Http\Controllers\Voice_recordingController::class);
 Route::resource('whatsapps', App\Http\Controllers\WhatsappController::class);
 Route::resource('workflows', App\Http\Controllers\WorkflowController::class);
+Route::resource('customer_cases', App\Http\Controllers\Customer_caseController::class);

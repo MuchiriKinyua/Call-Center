@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Case extends Model
+class Customer_case extends Model
 {
-    public $table = 'cases';
+    public $table = 'customer_cases';
 
     public $fillable = [
         'customer_id',

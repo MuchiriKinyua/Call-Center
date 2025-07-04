@@ -6,12 +6,12 @@
             <div class="row mb-2">
                 <div class="col-sm-6">
                     <h1>
-Case Details
+Customer Case Details
                     </h1>
                 </div>
                 <div class="col-sm-6">
                     <a class="btn btn-default float-right"
-                       href="{{ route('cases.index') }}">
+                       href="{{ route('customerCases.index') }}">
                                                     Back
                                             </a>
                 </div>
@@ -23,7 +23,7 @@ Case Details
         <div class="card">
             <div class="card-body">
                 <div class="row">
-                    @include('cases.show_fields')
+                    @include('customer_cases.show_fields')
                 </div>
             </div>
         </div>

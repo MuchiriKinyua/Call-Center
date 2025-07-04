@@ -2,10 +2,10 @@
 
 namespace App\Http\Requests;
 
-use App\Models\Case;
+use App\Models\Customer_case;
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateCaseRequest extends FormRequest
+class UpdateCustomer_caseRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,7 @@ class UpdateCaseRequest extends FormRequest
      */
     public function rules()
     {
-        $rules = Case::$rules;
+        $rules = Customer_case::$rules;
         
         return $rules;
     }

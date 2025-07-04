@@ -83,6 +83,13 @@
 </li>
 
 <li class="nav-item">
+    <a href="{{ route('customer_cases.index') }}" class="nav-link {{ Request::is('customer_cases*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-clipboard text-orange"></i>
+        <p>Customer Cases</p>
+    </a>
+</li>
+
+<li class="nav-item">
     <a href="{{ route('customer_feedbacks.index') }}" class="nav-link {{ Request::is('customer_feedbacks*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-comment-dots text-orange"></i>
         <p>Customer Feedbacks</p>
@@ -228,4 +235,6 @@
         <p>Workflows</p>
     </a>
 </li>
+
+
 

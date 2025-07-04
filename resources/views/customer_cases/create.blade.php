@@ -6,7 +6,7 @@
             <div class="row mb-2">
                 <div class="col-sm-12">
                     <h1>
-                    Create Cases
+                    Create Customer Cases
                     </h1>
                 </div>
             </div>
@@ -19,19 +19,19 @@
 
         <div class="card">
 
-            {!! Form::open(['route' => 'cases.store']) !!}
+            {!! Form::open(['route' => 'customer_cases.store']) !!}
 
             <div class="card-body">
 
                 <div class="row">
-                    @include('cases.fields')
+                    @include('customer_cases.fields')
                 </div>
 
             </div>
 
             <div class="card-footer">
                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('cases.index') }}" class="btn btn-default"> Cancel </a>
+                <a href="{{ route('customer_cases.index') }}" class="btn btn-default"> Cancel </a>
             </div>
 
             {!! Form::close() !!}
