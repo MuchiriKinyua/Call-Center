@@ -54,3 +54,19 @@ Route::resource('voice_recordings', App\Http\Controllers\Voice_recordingControll
 Route::resource('whatsapps', App\Http\Controllers\WhatsappController::class);
 Route::resource('workflows', App\Http\Controllers\WorkflowController::class);
 Route::resource('customer_cases', App\Http\Controllers\Customer_caseController::class);
+
+Route::get('language/{lang}', function ($lang) {
+    session(['locale' => $lang]);
+    app()->setLocale($lang);
+    return back();
+})->name('setLanguage');
+
+Route::get('/patients/trashed', [PatientController::class, 'trashed'])->name('patients.trashed');
+Route::put('/patients/{id}/restore', [PatientController::class, 'restore'])->name('patients.restore');
+Route::delete('/patients/{id}/force-delete', [PatientController::class, 'forceDelete'])->name('patients.forceDelete');
+
+Route::get('/edms-login', function () {
+    $user = Auth::user();
+    $token = encrypt($user->id);
+    return redirect("http://127.0.0.1:8001/sso-login?token=$token");
+})->name('edms.sso.login');

@@ -11,11 +11,13 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-[figtree] antialiased">
+<body class="bg-cover bg-center text-gray-800 dark:text-gray-100 font-[figtree] antialiased"
+      style="background-image: url('{{ asset('callcenter-bg.jpg') }}');">
+
 
     <div class="min-h-screen flex flex-col justify-center items-center px-6 py-12">
         <div class="text-center max-w-2xl">
-            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">
+            <h1 class="text-4xl text-blue-600 sm:text-5xl font-extrabold tracking-tight mb-4">
                 Welcome to the <span class="text-blue-600">Call Center</span> Dashboard
             </h1>
             <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-8">
